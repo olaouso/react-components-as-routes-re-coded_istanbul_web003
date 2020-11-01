@@ -62,5 +62,13 @@ return (
 
 ReactDOM.render(
   <Home />,
+   <Router>
+    <div>
+      <Navbar />
+      <Route exact path="/" component={Home}/>
+      <Route path="/about" component={About}/>
+      <Route path="/login" component={Login}/>
+    </div> 
+  </Router>,
   document.getElementById('root')
 );
